@@ -14,9 +14,9 @@ body{
     background-color: #fefefe;
     transition: all 0.3s ease-in-out;
 }
-.column{
+/* .column{
     width:100%;
-}
+} */
 
 li{
     list-style:none;
@@ -34,17 +34,26 @@ footer{
     border-radius:15px;
 }
 nav {
+    display: flex;
     background-color:#f1f1f1;
     padding:10px;
+    justify-content: space-around;
     border-radius:15px;
     box-shadow: calc(clamp(0px, var(--horiz), 2px)) calc(clamp(0px, var(--vert), 2px)) 2px calc(var(--spread)) rgba(0, 0, 0, 0.233), calc(2 * var(--horiz)) calc(2 * var(--vert)) calc(var(--blur)) calc(var(--spread)) rgba(0, 0, 0, 0.20), calc(3 * var(--horiz)) calc(3 * var(--vert)) calc(var(--blur)) calc(var(--spread)) rgba(0, 0, 0, 0.123), calc(5 * var(--horiz)) calc(5 * var(--vert)) calc(var(--blur)) calc(var(--spread)) rgba(0, 0, 0, 0.076), calc(8 * var(--horiz)) calc(8 * var(--vert)) calc(var(--blur)) calc(var(--spread)) rgba(0, 0, 0, 0.047), calc(13 * var(--horiz)) calc(13 * var(--vert)) calc(var(--blur)) calc(var(--spread)) rgba(0, 0, 0, 0.028);
     border: 1px solid rgba(0, 0, 0, 0.068);
     
 
 }
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1rem;
+
+}
 nav li {
     list-style:none;
-    display: inline-block;
     margin-right: 10px;
     padding:10px;
     background-color: #f1f1f1;
@@ -68,7 +77,7 @@ nav li a:hover{
 }   
 
 @media screen and (min-width: 600px) {
-    .column {
+    /* .column {
         float: left;
         width: 33.33%;
     }
@@ -76,7 +85,7 @@ nav li a:hover{
         content:"";        
         display:table;
         clear:both;
-    }
+    } */
     
 }
 
